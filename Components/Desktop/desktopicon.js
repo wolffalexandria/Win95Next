@@ -1,10 +1,11 @@
 import React from "react";
 // import "../index.css";
+import Image from "next/image";
 
 function DesktopIcon({ src, alt, text, handleClick }) {
   return (
     <div className="icons" onClick={handleClick}>
-      <img src={src} alt={alt} className="computericon" />
+      <Image src={src} alt={alt} width={52} height={52} className="computericon" />
       <span>{text}</span>
     </div>
   );

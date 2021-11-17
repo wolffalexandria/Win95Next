@@ -1,9 +1,9 @@
 import React from "react";
-import myComputerIcon from "../Icons/computer.png";
-// import "../index.css";
-import DesktopIcon from "./desktopicon";
-import Notepad from "../Icons/Notepad.ico";
-import SmileyFace from "../Icons/Smileyface.ico";
+import DesktopIcon from "../Desktop/desktopicon";
+import myComputer from "../../public/Icons/computer.png";
+import Notepad from "../../public/Icons/Notepad.ico";
+import smileyFace from "../../public/Icons/Smileyface.ico";
+
 
 function DesktopIcons({ handleClick }) {
   return (
@@ -21,7 +21,7 @@ function DesktopIcons({ handleClick }) {
 }
 let content = [
   {
-    src: myComputerIcon,
+    src: myComputer,
     alt: "MyComputer Icon",
     text: "My Computer",
     windowName: "myComputer",
@@ -33,7 +33,7 @@ let content = [
     windowName: "aboutMe",
   },
   {
-    src: SmileyFace,
+    src: smileyFace,
     alt: "Snake Game",
     text: "Snake Game",
     windowName: "snakeGame",

@@ -8,10 +8,11 @@ import {
   ListItem,
   Divider,
 } from "react95";
-import windowsLogo from "../Icons/logo.png";
-import computercard from "../Icons/ComputerCard.ico";
-import blueDisk from "../Icons/Diskette.ico";
-import bookdisk from "../Icons/BookDisc.ico";
+import Image from "next/image";
+import Logo from "../../public/Icons/logo.png";
+import computerCard from "../../public/Icons/ComputerCard.ico";
+import blueDisc from "../../public/Icons/Diskette.ico";
+import bookDisc from "../../public/Icons/BookDisc.ico";
 
 const WindowsStartBar = () => {
   const [open, setOpen] = React.useState(false);
@@ -24,10 +25,12 @@ const WindowsStartBar = () => {
             active={open}
             style={{ fontWeight: "bold" }}
           >
-            <img
-              src={windowsLogo}
+            <Image
+              src= {Logo}
               alt="react95 logo"
-              style={{ height: "20px", marginRight: 4 }}
+              width={20}
+              height={20}
+              marginRight={4}
             />
             Start
           </Button>
@@ -46,8 +49,8 @@ const WindowsStartBar = () => {
                   alt="link to github"
                   target="_blank"
                 >
-                  <img
-                    src={computercard}
+                  <Image
+                    src={computerCard}
                     alt="green computer card"
                     style={{ paddingTop: 10 }}
                   />
@@ -60,8 +63,8 @@ const WindowsStartBar = () => {
                   alt="CodeSandbox"
                   target="_blank"
                 >
-                  <img
-                    src={blueDisk}
+                  <Image
+                    src={blueDisc}
                     alt="blue computer floppy disk"
                     style={{ paddingRight: 5 }}
                   />
@@ -74,8 +77,8 @@ const WindowsStartBar = () => {
                   alt="Alex Wolff's Resume"
                   target="_blank"
                 >
-                  <img
-                    src={bookdisk}
+                  <Image
+                    src={bookDisc}
                     alt="open book with cd disc behind it"
                     style={{ paddingRight: 5 }}
                   />

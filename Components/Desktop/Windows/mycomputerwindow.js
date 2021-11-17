@@ -10,7 +10,7 @@ import {
   Panel,
 } from "react95";
 import CloseIcon from "./shared/closeicon";
-import folder from "../../Icons/Folder.ico";
+import folder from "../../../public/Icons/Folder.ico";
 import FolderIcon from "./shared/foldericon";
 import Draggable from "react-draggable";
 

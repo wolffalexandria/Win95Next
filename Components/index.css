@@ -25,7 +25,7 @@ code {
   grid-row-end: span 2;
 }
 html {
-  cursor: url(./Icons/mouse-pointer.png), auto;
+  cursor: url(../public/Icons/mouse-pointer.png), auto;
 }
 .grid-container {
   display: grid;
