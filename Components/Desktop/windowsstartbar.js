@@ -40,6 +40,8 @@ const WindowsStartBar = () => {
                 position: "absolute",
                 left: "0",
                 top: "100%",
+                width: "180px",
+                padding: "5px",
               }}
               onClick={() => setOpen(false)}
             >
@@ -52,9 +54,9 @@ const WindowsStartBar = () => {
                   <Image
                     src={computerCard}
                     alt="green computer card"
-                    style={{ paddingTop: 10 }}
+                    
                   />
-                  <span>GitHub</span>
+                  <span style={{padding: "10px"}}>GitHub</span>
                 </a>
               </ListItem>
               <ListItem>
@@ -66,9 +68,9 @@ const WindowsStartBar = () => {
                   <Image
                     src={blueDisc}
                     alt="blue computer floppy disk"
-                    style={{ paddingRight: 5 }}
+                    className="list-item"
                   />
-                  <span>CodeSandbox</span>
+                  <span style={{padding: "10px"}}>CodeSandbox</span>
                 </a>
               </ListItem>
               <ListItem>
@@ -80,9 +82,9 @@ const WindowsStartBar = () => {
                   <Image
                     src={bookDisc}
                     alt="open book with cd disc behind it"
-                    style={{ paddingRight: 5 }}
+                  
                   />
-                  <span>Resume</span>
+                  <span style={{padding: "10px"}}>Resume</span>
                 </a>
               </ListItem>
               <Divider />
